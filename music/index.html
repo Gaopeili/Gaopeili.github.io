@@ -170,35 +170,28 @@
                       <li>
                         <a href="/categories/技术/">
                           <i class="fa fa-code" aria-hidden="true"></i>
-                          技术
+                          ML
                         </a>
                       </li>
                     
                       <li>
                         <a href="/categories/生活/">
-                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                          生活
+                          <i class="fa fa-code-fork" aria-hidden="true"></i>
+                          DL
                         </a>
                       </li>
                     
                       <li>
                         <a href="/categories/资源/">
-                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
-                          资源
+                          <i class="fa fa-bug" aria-hidden="true"></i>
+                          CV
                         </a>
                       </li>
                     
                       <li>
                         <a href="/categories/随想/">
                           <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                          随想
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/categories/转载/">
-                          <i class="fa fa-book" aria-hidden="true"></i>
-                          转载
+                          idea
                         </a>
                       </li>
                     
@@ -363,6 +356,23 @@
 
       <!-- .entry-content -->
       
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container" class="comment"></div> 
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="/js/md5.min.js"></script>
+<script type="text/javascript">
+	var gitalk = new Gitalk({
+  	clientID: '',
+  	clientSecret: '',
+  	repo: 'Gaopeili.github.io',
+  	owner: 'Gaopeili',
+	admin: ['Gaopeili'],
+	distractionFreeMode: 'true',
+    id: md5(location.pathname)
+})
+gitalk.render('gitalk-container') 
+</script>
       <div class="single-reward">
         <div class="reward-open">赏
           <div class="reward-main">
@@ -569,35 +579,28 @@ $(document).ready(function() {
               <li>
                 <a href="/categories/技术/">
                   <i class="fa fa-code" aria-hidden="true"></i>
-                  技术
+                  ML
                 </a>
               </li>
             
               <li>
                 <a href="/categories/生活/">
-                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                  生活
+                  <i class="fa fa-code-fork" aria-hidden="true"></i>
+                  DL
                 </a>
               </li>
             
               <li>
                 <a href="/categories/资源/">
-                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
-                  资源
+                  <i class="fa fa-bug" aria-hidden="true"></i>
+                  CV
                 </a>
               </li>
             
               <li>
                 <a href="/categories/随想/">
                   <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                  随想
-                </a>
-              </li>
-            
-              <li>
-                <a href="/categories/转载/">
-                  <i class="fa fa-book" aria-hidden="true"></i>
-                  转载
+                  idea
                 </a>
               </li>
             
